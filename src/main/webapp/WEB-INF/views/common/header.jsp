@@ -147,7 +147,8 @@
 		                    <ul class="dropdown-menu dropdown-menu-right border py-0">
 		                     	<c:forEach items="${alarmList }" var="alarmList">
 		                        	<li class="mailAlarm">
-		                           		<a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="${cp }/message/messagedetail?m_no=${alarmList.m_no }">
+		                           		<a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" 
+		                           		    href="${cp }/message/messagedetail?m_no=${alarmList.m_no }">
 		                              		<div class="media">
 		                                 		<img src="${cp }/images/r_message.png" alt="" class="d-flex mr-3 img-fluid rounded-circle w-60">
 		                                 		<div class="media-body">

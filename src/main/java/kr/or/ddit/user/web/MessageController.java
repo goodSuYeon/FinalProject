@@ -39,7 +39,8 @@ public class MessageController {
 	    }
 		logger.debug("num:{}", num);
 		
-		model.addAttribute("alarmList", messageService.alarmMessage(user_id)); //추가
+		model.addAttribute("alarmList", messageService.alarmMessage(user_id));			
+
 		model.addAttribute("messagecont", messageService.countMessage(user_id));
 		
 		if(num == 1) {

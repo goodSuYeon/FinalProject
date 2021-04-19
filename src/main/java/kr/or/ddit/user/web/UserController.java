@@ -967,7 +967,8 @@ public class UserController {
 		logger.debug("po_no:{}",po_no);
 		logger.debug("user_id:{}", user_id);
 
-	    userService.representNPopol(user_id);   //모두 N으로 초기화작업
+	    userService.representNPopol(user_id);   //Y인값을 모두 N으로 초기화작업
+	    
 		if(po_no != null) {
 			String str = po_no;
 			String[] array = str.split(",");
@@ -979,7 +980,7 @@ public class UserController {
 				PortfolioVo portfolio = userService.getPopolList(pono);				
 				
 				if (pono != 0) {
-					userService.representYPopol(portfolio);   //Y->N으로 변경작업
+					userService.representYPopol(portfolio);   //Y로 변경작업
 				}
 			}
 		}
